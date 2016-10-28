@@ -4,15 +4,13 @@
 
 <h5><em>{{question.notes}}</em></h5>
 
+<hr>
 
 <h2>answers:</h2>
 
 {{#each question.answers as |answer|}}
-  <h4>answer.content</h4>
-  <h5>answer.author</h5>
+  {{answer-tile answer=answer}}
 {{/each}}
-
-{{answer-new saveAnswer="saveAnswer"}}
 
 
 <button class="remove-edit" {{action 'delete' question}}>Remove</button>

@@ -3,7 +3,9 @@
 
 <div class="question-panel">
 
-  {{question-detail question=model destroyQuestion="destroyQuestion" saveAnswer="saveAnswer"}}
+  {{question-detail question=model destroyQuestion="destroyQuestion"}}
   {{question-edit question=model update="update"}}
+  <br><br>
+  {{answer-new question=model saveAnswer="saveAnswer"}}
 
 </div>
