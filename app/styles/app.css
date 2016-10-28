@@ -12,16 +12,14 @@ a:hover{
   color: white;
 }
 
-.container{
-  position: relative;
-  height: 100vh;
+header{
+  position: fixed;
+  top:35px;
 }
 
-footer{
-}
-
+/*
 #footer-holder{
   position: absolute;
   bottom: 25px;
   width: 100%;
-}
+}*/

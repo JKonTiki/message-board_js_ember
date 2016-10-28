@@ -1,9 +1,8 @@
 <div class="container">
-  <h2>welcome to the message board</h2>
+  <header>
+    {{#link-to 'index'}}Home{{/link-to}}
+  </header>
+
   {{outlet}}
-  <div id="footer-holder">
-    <footer>
-      {{#link-to 'index'}}Contact{{/link-to}}
-    </footer>
-  </div>
+
 </div>
