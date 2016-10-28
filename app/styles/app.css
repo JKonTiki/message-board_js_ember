@@ -16,3 +16,20 @@ header{
   position: fixed;
   top:35px;
 }
+
+#question-list{
+  margin-top: 10em;
+  padding-left: 5em;
+  text-align: left;
+  border: 1px solid white;
+  border-radius: 8%;
+  background-color:rgba(255, 255, 255, .3);
+}
+
+#question-list h5{
+  margin-left: 3em;
+}
+
+.question{
+  margin: 5em;
+}
