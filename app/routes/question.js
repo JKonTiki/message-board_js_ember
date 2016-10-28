@@ -11,6 +11,9 @@ export default Ember.Route.extend({
             });
             question.save();
       this.transitionTo('index');
+    },
+    destroyQuestion(){
+      alert("this feature is coming soon, thank you for your patience.")
     }
   }
 
