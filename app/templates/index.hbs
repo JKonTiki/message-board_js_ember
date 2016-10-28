@@ -1,3 +1,5 @@
-<ul>
-  {{post-tile post=model}}
-</ul>
+<div id="question-list">
+  {{#each model as |question|}}
+    {{question-tile question=question}}
+  {{/each}}
+</div>
