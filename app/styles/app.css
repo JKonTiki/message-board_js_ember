@@ -19,6 +19,10 @@ button{
   background-color: rgba(200, 130, 130, 1);
 }
 
+input{
+  color:rgba(200, 130, 130, 1);
+}
+
 header{
   position: fixed;
   top:35px;

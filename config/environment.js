@@ -13,15 +13,17 @@ module.exports = function(environment) {
       }
     },
 
+
+    firebase: {
+      apiKey: "AIzaSyCbgm0OzCLumrBcGFLAEPWbtmP_I2T0gn0",
+       authDomain: "message-board-ddfbe.firebaseapp.com",
+       databaseURL: "https://message-board-ddfbe.firebaseio.com",
+       storageBucket: "message-board-ddfbe.appspot.com"
+    },
+    
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    },
-    firebase: {
-      apiKey: "AIzaSyCbgm0OzCLumrBcGFLAEPWbtmP_I2T0gn0",
-      authDomain: "message-board-ddfbe.firebaseapp.com",
-      databaseURL: "https://message-board-ddfbe.firebaseio.com",
-      storageBucket: "",
     }
   };
 

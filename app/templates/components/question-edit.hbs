@@ -1,1 +1,30 @@
-<button class="remove-edit" {{action 'edit' question}}>Edit</button>
+{{#if showEditForm}}
+  <br><br><br><br>
+
+
+  <form>
+    <div class="form-group">
+      <label for="content">Content</label>
+      {{input value=content id="content" value=question.content}}
+    </div>
+
+    <div class="form-group">
+      <label for="author">Author</label>
+      {{input value=author id="author" value=question.author}}
+    </div>
+
+    <div class="form-group">
+      <label for="notes">Notes</label>
+      {{input value=notes id="notes" value=question.notes}}
+    </div>
+
+    <button {{action 'update' question}}>Done</button>
+  </form>
+
+
+
+{{else}}
+
+  <button class="remove-edit" {{action 'showEditForm'}}>Edit</button>
+
+{{/if}}
