@@ -1,6 +1,6 @@
 <div class="question">
 
-  <h2>{{question.content}}</h2>
+  <h2>{{#link-to 'question' question.id}}{{question.content}}{{/link-to}}</h2>
   <h5>{{question.author}}</h5>
 
 </div>

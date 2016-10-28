@@ -1,7 +1,6 @@
 body{
   background-color:rgba(130, 130, 200, .5);
   color: white;
-  text-align: center;
 }
 
 a {
@@ -10,6 +9,10 @@ a {
 
 a:hover{
   color: white;
+}
+
+a:visited{
+  color: #ffffff;
 }
 
 header{
