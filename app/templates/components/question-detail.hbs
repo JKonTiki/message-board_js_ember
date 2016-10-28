@@ -1,8 +1,7 @@
 <h1>{{question.content}}</h1>
 
-<h3>{{question.author}}</h3>
+<h3>asked by: {{question.author}}</h3>
 
-<h5>{{question.notes}}</h5>
+<h5><em>{{question.notes}}</em></h5>
 
-
-<button action 'delete' question>Remove</button>
+<button {{action 'delete' question}}>Remove</button>
