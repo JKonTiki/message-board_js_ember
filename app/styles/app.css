@@ -19,6 +19,11 @@ button{
   background-color: rgba(200, 130, 130, 1);
 }
 
+.answer-button{
+  background-color: rgba(130, 200, 130, 1);
+
+}
+
 input{
   color:rgba(200, 130, 130, 1);
 }
