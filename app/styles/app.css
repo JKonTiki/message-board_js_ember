@@ -132,3 +132,7 @@ input{
 label{
   width:5em;
 }
+
+.error-message{
+  color: crimson;
+}

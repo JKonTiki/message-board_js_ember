@@ -19,6 +19,11 @@
       </div>
 
       <button {{action 'saveQuestion'}}>Save</button>
+      <button {{action 'cancelQuestion'}}>Cancel</button>
+
+      {{#if incompleteForm}}
+        <h3 class="error-message">please fill out the form in its entirety</h3>
+      {{/if}}
     </form>
   </div>
 {{else}}

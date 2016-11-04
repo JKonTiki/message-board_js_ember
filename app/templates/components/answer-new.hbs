@@ -15,6 +15,9 @@
 
       <button class="answer-button"{{action 'saveAnswer'}}>Save</button>
       <button class="answer-button"{{action 'cancelAnswer'}}>Cancel</button>
+      {{#if incompleteForm}}
+        <h3 class="error-message">please fill out the form in its entirety</h3>
+      {{/if}}
     </form>
   </div>
 {{else}}
