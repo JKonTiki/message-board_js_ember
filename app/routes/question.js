@@ -10,9 +10,8 @@ export default Ember.Route.extend({
               }
             });
             question.save();
-      this.transitionTo('index');
+      this.transitionTo('question');
     },
-
     saveAnswer(params){
       console.log(params);
       var newAnswer = this.store.createRecord('answer', params);
@@ -23,7 +22,6 @@ export default Ember.Route.extend({
       });
       this.transitionTo('question');
     },
-
     destroyQuestion(){
       alert("this feature is coming soon, thank you for your patience.");
     }

@@ -7,8 +7,6 @@ export default Ember.Component.extend({
     addNewAnswer(){
     this.set('addNewAnswer', true);
   },
-
-
     saveAnswer(){
       var params = {
         content: this.get('content') ? this.get('content') : "",
@@ -17,9 +15,11 @@ export default Ember.Component.extend({
       };
       this.sendAction('saveAnswer', params);
       this.set('addNewAnswer', false);
+    },
+
+    saveAnswer(){
+      this.set('addNewAnswer', false);
     }
-
-
 
   }
 

@@ -1,6 +1,11 @@
 body{
   background-color:rgba(130, 130, 200, .5);
   color: white;
+  font-family: 'Mate SC', serif;
+  min-height: 100vh;
+  margin:0;
+  position: relative;
+  padding-bottom: 5em;
 }
 
 a {
@@ -12,7 +17,7 @@ a:hover{
 }
 
 a:visited{
-  color: #ffffff;
+  color: white;
 }
 
 button{
@@ -28,21 +33,24 @@ input{
   color:rgba(200, 130, 130, 1);
 }
 
-header{
-  position: fixed;
-  top:35px;
+.navbar-top{
+  padding-left: 2em;
+}
+
+#header-hr{
+  margin: .5em;
+  max-width: 22em;
+  margin-left: -1em;
 }
 
 #body-main{
-  margin-top: 10em;
+  margin-top: 2em;
 }
 
 #question-list{
-  margin-top: 10em;
   padding-left: 5em;
   text-align: left;
   border: 1px solid white;
-  border-radius: 8%;
   background-color:rgba(255, 255, 255, .3);
 }
 
@@ -80,4 +88,47 @@ header{
 .answer-author{
   font-style: italic;
   margin-left: 2em;
+}
+
+.special {
+  font-size: 2em;
+}
+
+.question-home{
+  font-family: 'Kaushan Script', cursive;
+}
+
+.navbar-item{
+  margin-right: 2em;
+}
+
+.navbar-bottom{
+  width: 100%;
+  height: 3em;
+  background: white;
+  color: black;
+  position: absolute;
+  bottom: 0px;
+  left: 0em;
+  text-align: center;
+  padding: 1em;
+}
+
+#welcome-message{
+  margin-bottom: .75em;
+}
+
+#body-total{
+}
+
+#question-new{
+  margin-left: 3em;
+}
+
+#question-new form{
+  margin-left: 2em;
+}
+
+label{
+  width:5em;
 }
