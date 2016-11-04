@@ -1,0 +1,16 @@
+<div id="question-list">
+  {{#if questionsExist}}
+    {{#each questions as |question|}}
+      {{question-tile question=question}}
+    {{/each}}
+  {{else}}
+    <h2>No questions have been entered yet</h2>
+  {{/if}}
+</div>
+
+
+<div id="question-new">
+
+  {{question-new saveQuestion="saveQuestion"}}
+
+</div>
