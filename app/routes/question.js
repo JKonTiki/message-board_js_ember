@@ -5,7 +5,11 @@ export default Ember.Route.extend({
   actions:{
     update(question, params){
       Object.keys(params).forEach(function(key) {
-              if(params[key]!==undefined) {
+              if(params[key]!==undefined && params[key]!=="") {
+                question.set(key,params[key]);
+              }
+              // because only the 'notes' field can be empty:
+              if(key==="notes" && params[key]===""){
                 question.set(key,params[key]);
               }
             });

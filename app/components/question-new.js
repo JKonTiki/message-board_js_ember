@@ -15,7 +15,7 @@ export default Ember.Component.extend({
         author: this.get('author') ? this.get('author') : "",
         notes: this.get('notes') ? this.get('notes') : ""
       };
-      if (params.content === "" || params.author === "" || params.notes === "") {
+      if (params.content === "" || params.author === "") {
         this.set('incompleteForm', true);
       } else{
         this.sendAction('saveQuestion', params);
