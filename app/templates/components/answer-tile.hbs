@@ -1,10 +1,17 @@
 <div class="answer">
 
-  <h3 class="special-font">{{answer.content_answer}}</h3>
-
-  <span class="timestamp-answer">{{answer.timePosted_answer}}</span>
-  <h5 class="answer-author">{{answer.author_answer}}</h5>
-
+  <h2 class="special-font">{{answer.content_answer}}</h2>
+  <span class="timestamp-answer answer-author-timestamp">{{answer.timePosted_answer}}</span>
+<h5 class="answer-author answer-author-timestamp">{{answer.author_answer}}</h5>
+<br>
+  <span class="score-answer">
+    <span class="vote-icon" {{action 'upvote' answer}}>💹</span>
+    <span class="vote-icon downvote" {{action 'downvote' answer}}>🈵</span>
+    {{answer.score_answer}}
+  </span>
+  <br>
+  <br>
+  <hr>
 
 
 </div>

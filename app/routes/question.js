@@ -17,6 +17,20 @@ export default Ember.Route.extend({
       this.transitionTo('question');
     },
 
+    upvote(answer){
+      var newScore = answer.data.score_answer + 1;
+      answer.set('score_answer', newScore);
+      answer.save();
+      this.transitionTo('question');
+    },
+
+    downvote(answer){
+      var newScore = answer.data.score_answer - 1;
+      answer.set('score_answer', newScore);
+      answer.save();
+      this.transitionTo('question');
+    },
+
     saveAnswer(params){
       var newAnswer = this.store.createRecord('answer', params);
       var question = params.question;

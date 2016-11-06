@@ -205,3 +205,23 @@ label{
   float: right;
   /*margin: 2em 2em 0 0;  */
 }
+
+.score-answer{
+  float: right;
+}
+
+.answer-author-timestamp{
+  position: inline;
+}
+
+.score-answer{
+  font-size: 2em;
+}
+
+.vote-icon{
+  cursor: pointer;
+}
+
+.downvote{
+  margin-right: .5em;
+}

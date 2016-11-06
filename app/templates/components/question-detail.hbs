@@ -9,8 +9,8 @@
 
 <h2>answers ({{question.answers.length}}) :</h2>
 
-{{#each question.answers as |answer|}}
-  {{answer-tile answer=answer}}
+{{#each rankedAnswers as |answer|}}
+  {{answer-tile answer=answer upvote="upvote" downvote="downvote"}}
 {{/each}}
 
 <hr>
