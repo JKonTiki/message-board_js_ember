@@ -39,7 +39,7 @@ input{
 
 #header-hr{
   margin: .5em;
-  max-width: 22em;
+  max-width: 28em;
   margin-left: -1em;
 }
 
@@ -60,7 +60,8 @@ input{
 }
 
 .question{
-  margin: 5em;
+  margin: 3em;
+  padding:1px;
 }
 
 .question-panel{
@@ -136,4 +137,24 @@ label{
 
 .error-message{
   color: crimson;
+}
+
+.inline{
+  display: inline;
+}
+
+.star{
+  margin-right: 2em;
+}
+
+.question-author-home{
+  margin-left: 2em;
+}
+
+.author-home{
+  padding-left: 2em;
+  font-size: 1em;
+}
+.question-home{
+  font-size: 1.5em;
 }

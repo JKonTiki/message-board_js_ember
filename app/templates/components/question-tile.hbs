@@ -1,6 +1,6 @@
 <div class="question">
-
-  <h2>{{#link-to 'question' question.id class="question-home"}}{{question.content}}{{/link-to}}</h2>
-  <h5>{{question.author}}</h5>
-
+  <span {{action 'toggleFavorite' question}}>{{favorite-questions favoritesList question}}</span>
+  <span class="question-home">{{#link-to 'question' question.id class="question-home"}}{{question.content}}{{/link-to}}</span>
+  <br><br>
+  <span class="author-home">{{question.author}}</span>
 </div>
