@@ -1,10 +1,13 @@
 <div class="question">
+
   {{#if isInFavorites}}
     <span {{action 'toggleFavorite' question}} class="star">{{favorite-questions isInFavorites}}</span>
   {{else}}
     <span {{action 'toggleFavorite' question}} class="star">{{favorite-questions isInFavorites}}</span>
   {{/if}}
-  <span class="question-home">{{#link-to 'question' question.id class="question-home"}}{{question.content}}{{/link-to}}</span>
+
+  <span class="question-home special-font">{{#link-to 'question' question.id class="question-home"}}{{question.content}}{{/link-to}}</span>
+  <span class="timestamp-home">{{question.timePosted}}</span>
   <br><br>
   <span class="author-home">{{question.author}}</span>
 </div>

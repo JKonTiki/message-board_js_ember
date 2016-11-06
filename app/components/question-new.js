@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import moment from 'moment';
 
 export default Ember.Component.extend({
   addNewQuestion: false,
@@ -13,7 +14,8 @@ export default Ember.Component.extend({
       var params = {
         content: this.get('content') ? this.get('content') : "",
         author: this.get('author') ? this.get('author') : "",
-        notes: this.get('notes') ? this.get('notes') : ""
+        notes: this.get('notes') ? this.get('notes') : "",
+        timePosted: moment().format('[asked] h:mm a[], MM/DD/YY')
       };
       if (params.content === "" || params.author === "") {
         this.set('incompleteForm', true);
