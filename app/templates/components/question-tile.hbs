@@ -1,5 +1,9 @@
 <div class="question">
-  <span {{action 'toggleFavorite' question}}>{{favorite-questions favoritesList question}}</span>
+  {{#if isInFavorites}}
+    <span {{action 'toggleFavorite' question}}>{{favorite-questions isInFavorites}}</span>
+  {{else}}
+    <span {{action 'toggleFavorite' question}}>{{favorite-questions isInFavorites}}</span>
+  {{/if}}
   <span class="question-home">{{#link-to 'question' question.id class="question-home"}}{{question.content}}{{/link-to}}</span>
   <br><br>
   <span class="author-home">{{question.author}}</span>

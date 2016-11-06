@@ -1,13 +1,7 @@
 import Ember from 'ember';
 
-export function favoriteQuestions(favoritesList, question) {
-  var isInFavorites = false;
-  for (var i = 0; i < favoritesList.length; i++) {
-    if (favoritesList[i] === question) {
-      isInFavorites = true;
-    }
-  }
-  if (isInFavorites === true) {
+export function favoriteQuestions(_isInFavorites) {
+  if (_isInFavorites[0] === true) {
     return Ember.String.htmlSafe('★');
   } else{
     return Ember.String.htmlSafe('☆');

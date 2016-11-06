@@ -9,8 +9,6 @@ export default Ember.Service.extend({
     var isInFavorites = false;
 
     for (var i = 0; i < favoritesList.length; i++) {
-      console.log(favoritesList[i]);
-      console.log(question);
       if (favoritesList[i] === question) {
         isInFavorites = true;
       }
