@@ -1,8 +1,8 @@
 <div class="question">
   {{#if isInFavorites}}
-    <span {{action 'toggleFavorite' question}}>{{favorite-questions isInFavorites}}</span>
+    <span {{action 'toggleFavorite' question}} class="star">{{favorite-questions isInFavorites}}</span>
   {{else}}
-    <span {{action 'toggleFavorite' question}}>{{favorite-questions isInFavorites}}</span>
+    <span {{action 'toggleFavorite' question}} class="star">{{favorite-questions isInFavorites}}</span>
   {{/if}}
   <span class="question-home">{{#link-to 'question' question.id class="question-home"}}{{question.content}}{{/link-to}}</span>
   <br><br>

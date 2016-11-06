@@ -10,25 +10,25 @@ export default Ember.Component.extend({
   },
     saveAnswer(){
       var params = {
-        content: this.get('content') ? this.get('content') : "",
-        author: this.get('author') ? this.get('author') : "",
+        content_answer: this.get('content_answer') ? this.get('content_answer') : "",
+        author_answer: this.get('author_answer') ? this.get('author_answer') : "",
         question: this.get('question')
       };
-      if (params.content === "" || params.author === "") {
+      if (params.content_answer === "" || params.author_answer === "") {
         this.set('incompleteForm', true);
       } else{
         this.sendAction('saveAnswer', params);
         this.set('addNewAnswer', false);
         this.set('incompleteForm', false);
-        this.set('content', "");
-        this.set('author', "");
+        this.set('content_answer', "");
+        this.set('author_answer', "");
       }
     },
 
     cancelAnswer(){
       this.set('addNewAnswer', false);
-      this.set('content', "");
-      this.set('author', "");
+      this.set('content_answer', "");
+      this.set('author_answer', "");
     }
 
   }
