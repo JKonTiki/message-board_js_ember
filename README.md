@@ -1,6 +1,6 @@
 # Message-board
 
-This app is a message board. Users can view, post, and edit messages. They can also post answers to a particular message.
+Love the Wu Tang Clan? Want to meet and chat with others who share your passion, but don't want to deal with already-existing, perfectly sufficient, and huge-user base websites like Reddit? This message board, built using Ember.js, will meet all your needs and more. Give it a shot!
 
 ## Prerequisites
 
@@ -14,7 +14,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone https://github.com/JKonTiki/message-board_js_ember`
+* `git clone https://github.com/JKonTiki/wu-tang-forum`
 * change into the new directory
 * `npm install`
 * `bower install`
@@ -23,29 +23,3 @@ You will need the following things properly installed on your computer.
 
 * `ember serve`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
