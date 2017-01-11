@@ -2,6 +2,8 @@
 
 Love the Wu Tang Clan? Want to meet and chat with others who share your passion, but don't want to deal with already-existing, perfectly sufficient, and huge-user base websites like Reddit? This message board, built using Ember.js, will meet all your needs and more. Give it a shot!
 
+[Demo](https://wu-tang-forum.pagefrontapp.com/)
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
